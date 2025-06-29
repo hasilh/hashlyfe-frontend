@@ -38,7 +38,7 @@ useEffect(() => {
     sendAnswersToBackend(answers);
     console.log("✅ Sent answers to backend");
   }
-}, [step, ]);
+}, [step, answers ]);
 
 
 
