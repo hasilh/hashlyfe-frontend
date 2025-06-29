@@ -1,0 +1,41 @@
+.quotes-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #ff5e7e 0%, #ffb6c1 100%);
+}
+
+.stroke-quote {
+  position: absolute;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  opacity: 1.0;
+  white-space: nowrap;
+}
+
+.animate-fade-float {
+  animation-name: fadeFloat;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeFloat {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.1;
+  }
+}
